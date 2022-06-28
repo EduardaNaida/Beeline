@@ -1,0 +1,54 @@
+{
+  "name": "beeline",
+  "version": "1.0.0",
+  "description": "_Be in line, on-line_\r ---\r Beeline is a small project that aims to reduce crowding caused by queuing.\r It achieves this by providing simple web interface that dispenses digital\r queue-tickets and notifies the user when it is their turn. Additional\r functionality is the ability to limit the number of people in a building\r by counting and creating a queue when a building becomes full.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00oskpet/beeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/00oskpet/beeline/issues"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-simple-captcha": "^6.1.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^26.6.0"
+  }
+}

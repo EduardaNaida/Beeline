@@ -1,0 +1,411 @@
+body{
+  background-color: #c1d8f7;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+  color: rgb(0, 0, 0);
+  /*margin-left: 45%;*/
+}
+
+h2{
+  color: #000000;
+  margin-left: 43%
+  
+}
+
+/*For the searchbar to be hidden but visual for those with aid*/
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* large Iphone-size = 1024px high x 768px wide*/
+@media only screen and (max-width: 960px){
+  h1{
+      color: black;
+      margin-left: 25%;
+      margin-top: 10%;
+      margin-bottom: 20%;
+      font-size: 150px ;
+  }
+  input{
+      height: 100px ;
+      width: 79%;
+  }
+
+  .searchButton{
+      height: 100px ;
+      width: 20%;
+      font-size: 50px ;
+      margin-bottom: 20px;
+  }
+/*
+  #paper{
+      min-width: fit-content;
+      margin: auto ;
+      margin-bottom: 80px ;
+      border-radius: 100px;
+      margin-left: 0%;
+      margin-right: 0%;
+  }*/
+
+  #searchField{
+      width: 74vw ;
+      height: 100px ;
+      /*margin-bottom: 30px ; */
+  }
+
+  #header-search{
+       font-size: 50px ;
+  }
+  
+  .storeBorder{
+      margin-left: 0px;
+      background-color: #f6f8fa;
+      border-radius:25px;
+  }
+
+  .storerow{
+      font-size: 60px ;
+      font-family: "Lucida Console", "Courier New", monospace;
+      list-style-type: none;
+      width: 80%;
+      position: relative;
+      top: 25px;
+  }
+  
+  .storeWaitingTime{
+      font-size: 50px ;
+      margin-left: 80%;
+      position: relative;
+      bottom: 40px;
+      
+  }
+
+/*From here is the css for the second page!
+  .storeLogoContainer{
+    max-width: 700px;
+    margin: auto;
+    margin-top: -20px; 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+  }
+
+  .storeLogo{
+      font-size: 100px;
+  }
+  .adress{
+    font-size: 55px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .adressRegister{
+    font-size: 70px;
+    color: #b58b52;
+    max-width: 700px;
+    margin: auto;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+  
+  /*These design the 12 out of 12 text*/
+  .peopleInStoreContainer{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .peopleInStore{
+    font-size: 70px;
+  }
+  .peopleInStore1{
+    font-size: 40px;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .two{
+    box-sizing: border-box;
+    /* padding: 10px; */
+    width: 50%;
+    height: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .noQueue{
+    font-size: 90px;
+  }
+
+ /* .container{
+    display: flex;
+    width: 100%;
+    height: 300px;
+  }*/
+
+  .one{
+    box-sizing: border-box;
+    /* padding: 10px; */
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .waitingtTime{
+    font-size: 70px;
+    
+  }
+
+  .amountOfPeopleQueueing{
+    font-size: 70px;
+  } 
+
+  .hej{
+    position: relative;
+    top: 40px;
+    left: 40px;
+  }
+  .inlinebeforeu{
+    font-size: 40px;
+  }
+  .standInLineButton{
+    background-color: rgb(247,224,193);
+    border: none;
+    color: black;
+    padding: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 72px;
+    border-radius: 8px;
+    
+    /*This will center things*/
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .return{
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 20px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin: 60px;
+    
+  }
+
+  .ticketContainer{
+    background-color: white;
+    border-width: 13px;
+    border-color: #000000;
+    border-style: solid; 
+    max-width: 570px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*zig zag*/
+  .ticketContainer:after{
+    background: linear-gradient(-45deg, #c1d8f7, 25px, transparent 0), linear-gradient(45deg, #c1d8f7, 25px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 330px;
+    /*transform: rotate(-90deg);*/
+    left: 5px;
+    width: 100%;
+    height: 60px;
+  }
+
+  .ticketNrtxtContainer{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ticketNrtxt{
+    font-size: 55px;
+  }
+  
+  .ticketNrContainer{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  /*
+  .ticketNr{
+    font-size: 150px;
+  }*/
+
+  .cancelbutton{
+    background-color: rgb(247,224,193);
+    padding: 50px;
+    font-size: 72px;
+    /*This will center things*/
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cancelbuttonyourpsage{
+    background-color: rgb(247,224,193);
+    padding: 50px;
+    font-size: 72px;
+    /*This will center things*/
+    max-width: 700px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .yourTurn{
+    background-color: greenyellow;
+    max-width: 1000px;
+  }
+  .yourTurnText{
+    padding: 50px;
+    font-size: 64px;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .queuePic{
+    height: 72px;
+    width: 72px;
+  }
+
+  #reload_href{
+    font-size: 45px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .register{
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+
+  }
+  /*StoreRow*/
+  .storeButton{
+    margin: auto;
+    background-color: #ffffff;
+    font-size: 100px;
+    margin-top: 30px; 
+    max-width: 965px; 
+    min-width: 965px;
+    min-height: 200px;
+    border-radius: 100px;
+  }
+
+}
+/* larger than Iphone-size = 1024px high x 768px wide*/
+@media only screen and (min-width: 960px) {
+  /*StoreRow*/
+  .storeButton{
+    margin: auto;
+    background-color: #ffffff;
+    font-size: xxx-large;
+    margin-top: 30px; 
+    max-width: 965px; 
+    min-width: 965px;
+    min-height: 200px;
+    border-radius: 100px;
+  }
+  .return{
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 20px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin: 60px;
+    
+  }
+  .ticketContainer{
+    background-color: white;
+    border-width: 13px;
+    border-color: #000000;
+    border-style: solid; 
+    max-width: 400px;
+    max-height: 200px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  /*zig zag*/
+  .ticketContainer:after{
+    background: linear-gradient(-45deg, #c1d8f7, 25px, transparent 0), linear-gradient(45deg, #c1d8f7, 25px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    /*transform: rotate(-90deg);*/
+    left: 5px;
+    width: 100%;
+    height: 60px;
+  }
+
+  .ticketNrtxtContainer{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ticketNrtxt{
+    font-size: 55px;
+  }
+  
+}
+
