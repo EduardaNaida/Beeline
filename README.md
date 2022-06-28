@@ -10,8 +10,8 @@ by counting and creating a queue when a building becomes full.
 
 # Authors
 
-- Elsa Kidman
 - Eduarda Naida
+- Elsa Kidman
 - Linus Olofsson
 - Oskar Pettersson Löfstedt
 - Agnes Sidemo
