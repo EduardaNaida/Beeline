@@ -7,12 +7,3 @@ It achieves this by providing simple web interface that dispenses digital
 queue-tickets and notifies the user when it is their turn. Additional
 functionality is the ability to limit the number of people in a building
 by counting and creating a queue when a building becomes full.
-
-# Authors
-
-- Eduarda Naida
-- Elsa Kidman
-- Linus Olofsson
-- Oskar Pettersson Löfstedt
-- Agnes Sidemo
-- Emmy Svensson
